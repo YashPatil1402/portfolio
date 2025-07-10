@@ -1,4 +1,4 @@
-/* Reset and base styles */
+/* Reset and Base Styles */
 * {
   margin: 0;
   padding: 0;
@@ -7,19 +7,44 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  line-height: 1.6;
-  background-color: #f4f4f4;
+  background-color: #f9f9f9;
   color: #333;
- 
+  line-height: 1.6;
 }
 
-/* Sticky social icons inside header */
+/* Header */
+.main-header {
+  background: linear-gradient(to right, #1d2b64, #f8cdda);
+  color: white;
+  padding: 100px 20px 60px;
+  text-align: center;
+  position: relative;
+}
+
+.header-content h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.header-content h2 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin: 10px 0;
+}
+
+.header-content p {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1rem;
+  opacity: 0.95;
+}
+
 .header-socials {
   position: absolute;
   top: 20px;
   right: 20px;
   display: flex;
-  gap: 10px;
+  gap: 12px;
 }
 
 .header-socials img {
@@ -32,38 +57,7 @@ body {
   transform: scale(1.15);
 }
 
-/* Header Styles */
-.main-header {
-  position: relative;
-  background: linear-gradient(to right, #1d2b64, #f8cdda);
-  color: white;
-  padding: 80px 20px 60px 20px;
-  text-align: center;
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
-}
-
-.main-header h1 {
-  font-size: 52px;
-  font-weight: 700;
-  margin-bottom: 12px;
-  text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
-}
-
-.main-header h2 {
-  font-size: 30px;
-  font-weight: 500;
-  margin-bottom: 20px;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-}
-
-.main-header p {
-  font-size: 18px;
-  max-width: 650px;
-  margin: 0 auto;
-  line-height: 1.8;
-}
-
-/* Section Styles */
+/* Sections */
 section {
   padding: 60px 20px;
   max-width: 1000px;
@@ -71,79 +65,64 @@ section {
 }
 
 section h2 {
-  font-size: 38px;
+  text-align: center;
+  font-size: 2.2rem;
   color: #4e54c8;
   margin-bottom: 30px;
-  text-transform: uppercase;
-  text-align: center;
   position: relative;
-  padding-bottom: 10px;
-  border-bottom: 4px solid #4e54c8;
-  display: inline-block;
-  letter-spacing: 1px;
 }
 
 section p {
-  font-size: 15px;
-  color: #444;
-  max-width: 800px;
-  margin: 0 auto;
-  line-height: 1.8;
-  background: #fff;
+  background-color: white;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  font-size: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  color: #444;
 }
 
+/* Projects */
 .project-card {
-  background-color: #fff;
+  background: white;
   border: 2px solid #8f94fb;
+  border-radius: 12px;
   padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
   margin-top: 20px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
 }
 
 .project-card h3 {
-  font-size: 24px;
+  font-size: 1.4rem;
   color: #333;
-  margin-bottom: 12px;
 }
 
-.project-card p {
-  font-size: 14px;
-  color: #555;
-}
-
-/* Contact form */
+/* Contact */
 #contact-form {
   display: flex;
   flex-direction: column;
   gap: 15px;
   max-width: 600px;
   margin: auto;
-  padding: 25px;
-  background: #fff;
+  padding: 30px;
+  background-color: white;
   border-radius: 12px;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.06);
 }
 
 #contact-form input,
 #contact-form textarea {
   padding: 12px;
-  border: 1px solid #ccc;
+  font-size: 1rem;
   border-radius: 8px;
-  font-size: 15px;
-  font-family: 'Poppins', sans-serif;
+  border: 1px solid #ccc;
 }
 
 #contact-form button {
   background-color: #4e54c8;
   color: white;
-  border: none;
   padding: 14px;
+  border: none;
   border-radius: 8px;
-  font-size: 16px;
   font-weight: bold;
   cursor: pointer;
   transition: background-color 0.3s ease;
@@ -157,25 +136,28 @@ section p {
 footer {
   text-align: center;
   padding: 25px;
-  font-size: 15px;
-  color: #777;
-  background-color: #f1f1f1;
-  margin-top: 60px;
+  font-size: 0.9rem;
+  background: #eee;
+  margin-top: 50px;
+  color: #555;
 }
 
 /* Responsive */
 @media (max-width: 768px) {
   .main-header h1 {
-    font-size: 36px;
+    font-size: 2.2rem;
   }
+
   .main-header h2 {
-    font-size: 24px;
+    font-size: 1.4rem;
   }
-  section h2 {
-    font-size: 26px;
-  }
+
   .header-socials {
     top: 10px;
     right: 10px;
+  }
+
+  section h2 {
+    font-size: 1.6rem;
   }
 }

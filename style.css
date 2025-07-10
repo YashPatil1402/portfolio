@@ -114,3 +114,21 @@ footer {
   color: white;
   font-size: 0.9rem;
 }
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-right a img.insta-icon {
+  width: 36px;
+  height: 36px;
+  filter: brightness(0) invert(1); /* makes icon white on dark background */
+  transition: transform 0.3s ease;
+}
+
+.header-right a img.insta-icon:hover {
+  transform: scale(1.1);
+}
+

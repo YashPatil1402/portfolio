@@ -84,7 +84,7 @@ section p {
 
 /* Projects */
 #projects h2 {
-  border-bottom: none; /* remove underline for Projects */
+  border-bottom:4px solid #4e54c8; /* remove underline for Projects */
 }
 
 .project-card {

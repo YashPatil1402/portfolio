@@ -9,21 +9,25 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   
+  <!-- AOS CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  
+  <!-- Custom CSS -->
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
   <!-- Header Section -->
-  <header class="main-header">
+  <header class="main-header" data-aos="fade-down">
     <div class="header-container">
-      <div class="header-content">
+      <div class="header-content" data-aos="zoom-in">
         <h1>Yash Patil</h1>
         <h2>Portfolio Website</h2>
         <p>I'm Yash Patil — still studying, still learning, still growing. The grind doesn’t stop.</p>
       </div>
 
       <!-- Social Icons -->
-      <div class="header-socials">
+      <div class="header-socials" data-aos="fade-left">
         <a href="https://instagram.com/yashpatil.14" target="_blank">
           <img src="https://img.icons8.com/color/48/instagram-new--v1.png" alt="Instagram">
         </a>
@@ -40,7 +44,7 @@
   <!-- Main Content -->
   <main>
     <!-- About Section -->
-    <section id="about">
+    <section id="about" data-aos="fade-up">
       <h2>About Me</h2>
       <p>
         Hi, I'm Yash Patil, a Computer Engineering student at Pillai College of Engineering, New Panvel. I’ve completed my diploma from MSBTE and have a strong interest in tech, especially web and mobile development. I enjoy learning new things, working on practical projects, and constantly improving my skills. Always curious, always growing.
@@ -48,9 +52,9 @@
     </section>
 
     <!-- Projects Section -->
-    <section id="projects">
+    <section id="projects" data-aos="fade-up">
       <h2>Projects</h2>
-      <div class="project-card">
+      <div class="project-card" data-aos="zoom-in">
         <h3>Coming Soon</h3>
         <p><strong>Status:</strong> Not yet started</p>
         <p>This project is currently in the planning phase. Details will be updated once development begins. Stay tuned!</p>
@@ -58,9 +62,9 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact">
+    <section id="contact" data-aos="fade-up">
       <h2>Contact Me</h2>
-      <form id="contact-form">
+      <form id="contact-form" data-aos="zoom-in">
         <input type="text" name="Name" placeholder="Your Name" required />
         <input type="email" name="Email" placeholder="Your Email" required />
         <textarea name="Message" placeholder="Your Message" rows="5" required></textarea>
@@ -71,10 +75,12 @@
   </main>
 
   <!-- Footer -->
-  <footer>
+  <footer data-aos="fade-up">
     <p>&copy; 2025 Yash Patil. All rights reserved.</p>
   </footer>
 
+  <!-- AOS JS + Custom JS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   <script src="script.js"></script>
 </body>
 </html>

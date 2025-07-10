@@ -21,6 +21,9 @@ form.addEventListener('submit', e => {
 document.addEventListener('DOMContentLoaded', () => {
   AOS.init({
     duration: 1000,
-    once: false  
+    once: false,     // animate again on scroll up
+    mirror: true,    // animate out while scrolling up
+    anchorPlacement: 'top-bottom',
+    easing: 'ease-in-out',
   });
 });

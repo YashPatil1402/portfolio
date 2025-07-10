@@ -168,7 +168,7 @@ footer {
   }
 }
 
-.main-header::after {
+.main-header::before {
   content: "";
   position: absolute;
   bottom: -30px;

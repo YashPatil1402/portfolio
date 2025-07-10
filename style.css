@@ -89,7 +89,7 @@ section p {
 
 .project-card {
   background: white;
-  
+  border: 2px solid #8f94fb;
   border-radius: 12px;
   padding: 20px;
   margin-top: 20px;

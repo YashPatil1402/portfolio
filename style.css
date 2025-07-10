@@ -1,4 +1,3 @@
-
 /* Reset and Base Styles */
 * {
   margin: 0;
@@ -71,6 +70,7 @@ section h2 {
   color: #4e54c8;
   margin-bottom: 30px;
   position: relative;
+  border-bottom: 4px solid #4e54c8; /* default underline */
 }
 
 section p {
@@ -83,6 +83,10 @@ section p {
 }
 
 /* Projects */
+#projects h2 {
+  border-bottom: none; /* remove underline for Projects */
+}
+
 .project-card {
   background: white;
   border: 2px solid #8f94fb;
@@ -161,7 +165,4 @@ footer {
   section h2 {
     font-size: 1.6rem;
   }
-}
-#projects h2 {
-  border-bottom: none;
 }

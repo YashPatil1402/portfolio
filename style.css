@@ -1,36 +1,4 @@
 /* =======================
-   Global Variables
-========================== */
-:root {
-  --primary-color: #3b82f6;
-  --primary-dark: #2563eb;
-  --text-color: #333;
-  --bg-color: #f3f4f6;
-  --header-bg: linear-gradient(to right, #0f2027, #203a43, #2c5364);
-  --footer-bg: #1f2937;
-}
-
-/* =======================
-   General Reset
-========================== */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* =======================
-   Font and Base Styles
-========================== */
-body {
-  font-family: 'Poppins', sans-serif;
-  background-color: var(--bg-color);
-  color: var(--text-color);
-  line-height: 1.6;
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-/* =======================
    Header
 ========================== */
 .main-header {
@@ -38,6 +6,16 @@ body {
   color: white;
   padding: 60px 20px;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 60vh;
+}
+
+.header-content {
+  text-align: center;
+  max-width: 600px;
 }
 
 .main-header h1 {
@@ -53,197 +31,5 @@ body {
 
 .main-header p {
   font-size: 1.1rem;
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-/* =======================
-   Sections
-========================== */
-main {
-  padding: 40px 20px;
-  max-width: 1000px;
-  margin: auto;
-}
-
-section {
-  margin-bottom: 50px;
-}
-
-section h2 {
-  font-size: 2rem;
-  color: #1f2937;
-  margin-bottom: 15px;
-  border-bottom: 2px solid var(--primary-color);
-  display: inline-block;
-  padding-bottom: 5px;
-}
-
-/* =======================
-   Project Card
-========================== */
-.project-card {
-  background-color: white;
-  padding: 20px;
-  border-left: 5px solid var(--primary-color);
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-  margin-top: 15px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.project-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 12px rgba(0,0,0,0.15);
-}
-
-.project-card h3 {
-  color: var(--primary-dark);
-  margin-bottom: 10px;
-}
-
-/* =======================
-   Contact Form
-========================== */
-form {
-  background-color: white;
-  padding: 25px;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-}
-
-form input,
-form textarea {
-  width: 100%;
-  padding: 12px;
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  font-size: 1rem;
-  transition: border-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-form input:focus,
-form textarea:focus {
-  border-color: var(--primary-color);
-  box-shadow: 0 0 5px rgba(59, 130, 246, 0.5);
-  outline: none;
-}
-
-form button {
-  background-color: var(--primary-color);
-  color: white;
-  padding: 12px 25px;
-  border: none;
-  border-radius: 6px;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-form button:hover {
-  background-color: var(--primary-dark);
-}
-
-/* =======================
-   Footer
-========================== */
-footer {
-  text-align: center;
-  padding: 20px;
-  background-color: var(--footer-bg);
-  color: white;
-  font-size: 0.9rem;
-}
-
-/* =======================
-   Header Right (Social Icons)
-========================== */
-.header-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.header-right a img.insta-icon {
-  width: 36px;
-  height: 36px;
-  filter: brightness(0) invert(1);
-  transition: transform 0.3s ease;
-}
-
-.header-right a img.insta-icon:hover {
-  transform: scale(1.1);
-}
-
-/* =======================
-   Responsive Design
-========================== */
-@media (max-width: 768px) {
-  .main-header h1 {
-    font-size: 2.2rem;
-  }
-
-  .main-header h2 {
-    font-size: 1.2rem;
-  }
-
-  .main-header p {
-    font-size: 1rem;
-  }
-
-  section h2 {
-    font-size: 1.5rem;
-  }
-
-  .project-card {
-    padding: 15px;
-  }
-
-  form input,
-  form textarea {
-    font-size: 0.95rem;
-  }
-
-  form button {
-    padding: 10px 20px;
-    font-size: 0.95rem;
-  }
-}
-.instagram-fixed {
-  position: fixed;
-  top: 15px;
-  right: 15px;
-  z-index: 999;
-}
-
-.instagram-fixed img {
-  width: 40px;
-  height: 40px;
-  border-radius: 8px;
-  transition: transform 0.3s ease;
-}
-
-.instagram-fixed img:hover {
-  transform: scale(1.1);
-}
-
-.social-fixed {
-  position: fixed;
-  top: 15px;
-  right: 15px;
-  z-index: 999;
-  display: flex;
-  gap: 10px;
-}
-
-.social-fixed img {
-  width: 40px;
-  height: 40px;
-  border-radius: 8px;
-  transition: transform 0.3s ease;
-}
-
-.social-fixed img:hover {
-  transform: scale(1.1);
+  margin-top: 10px;
 }

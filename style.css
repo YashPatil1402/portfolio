@@ -162,7 +162,29 @@ footer {
     top: 10px;
     right: 10px;
   }
+.header-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
 
+.header-row h1,
+.header-row h2 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.header-photo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+  
   section h2 {
     font-size: 1.6rem;
   }

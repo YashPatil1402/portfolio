@@ -5,7 +5,7 @@
 Welcome to my personal portfolio! This is where I share my journey—skills I’ve learned, projects I’ve built, my academic background, and how you can get in touch. It’s designed using 💻 HTML, CSS, and JavaScript (or React, Tailwind, etc.—depending on the tech stack you choose).
 
 📌 Live Demo
-👉 https://yashpatil1402.github.io/portfolio/?fbclid=PAQ0xDSwLhoh1leHRuA2FlbQIxMQABpxKbXWBsphAHgXa1qE_Jm38q-BKkZQ7rygZoLDhQCTIAq-Agx3u_lLa8Tuqc_aem_q6MbcWTZyHs_yR_8wjRVjQ
+👉https://yashpatil1402.github.io/portfolio/?fbclid=PAQ0xDSwLhoh1leHRuA2FlbQIxMQABpxKbXWBsphAHgXa1qE_Jm38q-BKkZQ7rygZoLDhQCTIAq-Agx3u_lLa8Tuqc_aem_q6MbcWTZyHs_yR_8wjRVjQ
 
 ---
 

@@ -3,194 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Yil - Computer Engineering Student & Web Developer Portfolio">
-    <meta name="keywords" content="Yash Patil, Computer Engineering, Web Developer, Portfolio, Student">
-    <meta name="author" content="Yash Patil">
-    
-    <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="Yash Patil - Computer Engineering Portfolio">
-    <meta property="og:description" content="Computer Engineering student passionate about web development and technology innovation">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://yashpatil1402.github.io/portfolio/">
-    
-    <title>Yash Patil | Computer Engineering Portfolio</title>
-    
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    
-    <!-- Font Awesome for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    
-    <!-- AOS Animation Library -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-    
-    <!-- Custom CSS -->
+    <title>Yash Patil - Computer Science Student & Aspiring Software Engineer</title>
     <link rel="stylesheet" href="style.css">
-    
-    <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
 </head>
 <body>
-    <!-- Loading Screen -->
-    <div id="loading-screen" class="loading-screen">
-        <div class="loading-spinner">
-            <div class="spinner"></div>
-            <p>Loading Portfolio...</p>
-        </div>
-    </div>
-
     <!-- Navigation -->
-    <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <a href="#home">YP</a>
+    <nav class="nav" id="navbar">
+        <div class="nav__container">
+            <div class="nav__logo">
+                <a href="#home">Yash Patil</a>
             </div>
-            <ul class="nav-menu" id="nav-menu">
-                <li class="nav-item">
-                    <a href="#home" class="nav-link active">Home</a>
+            <ul class="nav__menu" id="nav-menu">
+                <li class="nav__item">
+                    <a href="#home" class="nav__link">Home</a>
                 </li>
-                <li class="nav-item">
-                    <a href="#about" class="nav-link">About</a>
+                <li class="nav__item">
+                    <a href="#about" class="nav__link">About</a>
                 </li>
-                <li class="nav-item">
-                    <a href="#skills" class="nav-link">Skills</a>
+                <li class="nav__item">
+                    <a href="#skills" class="nav__link">Skills</a>
                 </li>
-                <li class="nav-item">
-                    <a href="#projects" class="nav-link">Projects</a>
+                <li class="nav__item">
+                    <a href="#projects" class="nav__link">Projects</a>
                 </li>
-                <li class="nav-item">
-                    <a href="#contact" class="nav-link">Contact</a>
+                <li class="nav__item">
+                    <a href="#experience" class="nav__link">Education</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#contact" class="nav__link">Contact</a>
                 </li>
             </ul>
-            <div class="hamburger" id="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+            <div class="nav__actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                    <span class="theme-toggle__icon">🌙</span>
+                </button>
+                <button class="nav__toggle" id="nav-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <header id="home" class="hero-section">
-        <div class="hero-background">
-            <div class="floating-shapes">
-                <div class="shape shape-1"></div>
-                <div class="shape shape-2"></div>
-                <div class="shape shape-3"></div>
-                <div class="shape shape-4"></div>
-            </div>
-        </div>
-        
-        <div class="hero-content">
-            <div class="hero-text" data-aos="fade-up" data-aos-duration="1000">
-                <h1 class="hero-title">
-                    <span class="greeting">Hello, I'm</span>
-                    <span class="name">Yash Patil</span>
-                </h1>
-                <h2 class="hero-subtitle">
-                    <span class="typed-text"></span>
-                    <span class="cursor">&nbsp;</span>
-                </h2>
-                <p class="hero-description">
-                    Computer Engineering student passionate about web development, 
-                    mobile applications, and innovative technology solutions.
-                </p>
-                <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary">
-                        <i class="fas fa-code"></i>
-                        View My Work
-                    </a>
-                    <a href="#contact" class="btn btn-secondary">
-                        <i class="fas fa-envelope"></i>
-                        Get In Touch
-                    </a>
+    <section class="hero" id="home">
+        <div class="hero__container">
+            <div class="hero__content">
+                <div class="hero__text">
+                    <h1 class="hero__title">Hi, I'm <span class="highlight">Yash Patil</span></h1>
+                    <p class="hero__subtitle" id="typing-text">Computer Science Student | Aspiring Software Engineer | Mumbai</p>
+                    <p class="hero__description">Passionate Computer Science student from Mumbai, India, dedicated to building innovative solutions and mastering cutting-edge technologies. Currently pursuing my degree with a focus on software development and creating impactful applications.</p>
+                    <div class="hero__buttons">
+                        <a href="#projects" class="btn btn--primary">View Projects</a>
+                        <a href="#contact" class="btn btn--outline">Contact Me</a>
+                        <button class="btn btn--secondary" id="view-resume">Download Resume</button>
+                    </div>
                 </div>
-            </div>
-            
-            <div class="hero-image" data-aos="fade-left" data-aos-duration="1200">
-                <div class="image-container">
-                    <img src="yash.jpg" alt="Yash Patil" class="profile-image">
-                    <div class="image-overlay"></div>
+                <div class="hero__image">
+                    <div class="hero__avatar">
+                        <div class="avatar-placeholder">YP</div>
+                    </div>
                 </div>
             </div>
         </div>
-        
-        <div class="social-links" data-aos="fade-right" data-aos-duration="1000">
-            <a href="https://github.com/YashPatil1402" target="_blank" rel="noopener noreferrer" class="social-link">
-                <i class="fab fa-github"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/yash-patil-1736702b1/" target="_blank" rel="noopener noreferrer" class="social-link">
-                <i class="fab fa-linkedin"></i>
-            </a>
-            <a href="https://instagram.com/yashpatil.14" target="_blank" rel="noopener noreferrer" class="social-link">
-                <i class="fab fa-instagram"></i>
-            </a>
-            <a href="mailto:yash@example.com" class="social-link">
-                <i class="fas fa-envelope"></i>
-            </a>
-        </div>
-        
-        <div class="scroll-indicator">
-            <div class="scroll-mouse">
-                <div class="scroll-wheel"></div>
-            </div>
-            <p>Scroll Down</p>
-        </div>
-    </header>
+    </section>
 
     <!-- About Section -->
-    <section id="about" class="about-section section-padding">
+    <section class="about" id="about">
         <div class="container">
-            <div class="section-title" data-aos="fade-up">
-                <h2>About Me</h2>
-                <p>Get to know more about my background and journey</p>
-            </div>
-            
-            <div class="about-content">
-                <div class="about-text" data-aos="fade-right" data-aos-duration="1000">
-                    <div class="about-description">
-                        <p>
-                            Hi there! I'm <strong>Yash Patil</strong>, a passionate Computer Engineering student 
-                            currently pursuing my degree. I have completed my diploma from MSBTE and have 
-                            developed a strong interest in technology, particularly in web and mobile development.
-                        </p>
-                        <p>
-                            My journey in technology began with curiosity and has evolved into a genuine passion 
-                            for creating innovative solutions. I enjoy learning new technologies, working on 
-                            practical projects, and constantly improving my skills through hands-on experience.
-                        </p>
-                        <p>
-                            I believe in the power of continuous learning and staying curious about emerging 
-                            technologies. My goal is to contribute meaningful solutions to real-world problems 
-                            through code and creativity.
-                        </p>
-                    </div>
-                    
-                    <div class="about-stats">
-                        <div class="stat-item">
-                            <h3>50+</h3>
-                            <p>Hours of Coding</p>
-                        </div>
-                        <div class="stat-item">
-                            <h3>5+</h3>
-                            <p>Projects Completed</p>
-                        </div>
-                        <div class="stat-item">
-                            <h3>2+</h3>
-                            <p>Years Learning</p>
-                        </div>
+            <h2 class="section__title">About Me</h2>
+            <div class="about__content">
+                <div class="about__text">
+                    <p>I am a passionate Computer Science student based in Mumbai, India, with a strong foundation in software development and programming. Currently pursuing my degree in Computer Science/IT, I am dedicated to learning cutting-edge technologies and building innovative solutions. My journey in tech has been driven by curiosity and a desire to create impactful software that makes a difference.</p>
+                    <div class="about__highlights">
+                        <h3>What I'm Passionate About</h3>
+                        <ul class="highlights__list">
+                            <li>Full-stack web development and modern frameworks</li>
+                            <li>Data structures, algorithms, and problem-solving</li>
+                            <li>Open-source contribution and collaborative coding</li>
+                            <li>Building user-friendly and scalable applications</li>
+                            <li>Continuous learning and staying updated with tech trends</li>
+                        </ul>
                     </div>
                 </div>
-                
-                <div class="about-image" data-aos="fade-left" data-aos-duration="1000">
-                    <div class="image-wrapper">
-                        <img src="yash.jpg" alt="About Yash Patil">
-                        <div class="experience-badge">
-                            <i class="fas fa-graduation-cap"></i>
-                            <span>Computer Engineering Student</span>
-                        </div>
+                <div class="about__info">
+                    <div class="info__card">
+                        <h4>Location</h4>
+                        <p>Mumbai, India</p>
+                    </div>
+                    <div class="info__card">
+                        <h4>Email</h4>
+                        <p>yashpatil.140227@gmail.com</p>
+                    </div>
+                    <div class="info__card">
+                        <h4>Phone</h4>
+                        <p>+918149844805</p>
+                    </div>
+                    <div class="info__card">
+                        <h4>Status</h4>
+                        <p>Open to Opportunities</p>
                     </div>
                 </div>
             </div>
@@ -198,131 +110,131 @@
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="skills-section section-padding">
+    <section class="skills" id="skills">
         <div class="container">
-            <div class="section-title" data-aos="fade-up">
-                <h2>Technical Skills</h2>
-                <p>Technologies and tools I work with</p>
-            </div>
-            
-            <div class="skills-content">
-                <div class="skills-categories">
-                    <!-- Frontend Skills -->
-                    <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
-                        <div class="category-header">
-                            <i class="fas fa-code"></i>
-                            <h3>Frontend Development</h3>
+            <h2 class="section__title">Skills & Technologies</h2>
+            <div class="skills__grid">
+                <div class="skill__category">
+                    <h3 class="category__title">Programming Languages</h3>
+                    <div class="skills__list">
+                        <div class="skill__item">
+                            <div class="skill__info">
+                                <span class="skill__name">JavaScript</span>
+                                <span class="skill__percentage">90%</span>
+                            </div>
+                            <div class="skill__bar">
+                                <div class="skill__progress" data-level="90"></div>
+                            </div>
                         </div>
-                        <div class="skill-items">
-                            <div class="skill-item">
-                                <div class="skill-info">
-                                    <span>HTML5</span>
-                                    <span>90%</span>
-                                </div>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-width="90%"></div>
-                                </div>
+                        <div class="skill__item">
+                            <div class="skill__info">
+                                <span class="skill__name">Python</span>
+                                <span class="skill__percentage">85%</span>
                             </div>
-                            <div class="skill-item">
-                                <div class="skill-info">
-                                    <span>CSS3</span>
-                                    <span>85%</span>
-                                </div>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-width="85%"></div>
-                                </div>
+                            <div class="skill__bar">
+                                <div class="skill__progress" data-level="85"></div>
                             </div>
-                            <div class="skill-item">
-                                <div class="skill-info">
-                                    <span>JavaScript</span>
-                                    <span>75%</span>
-                                </div>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-width="75%"></div>
-                                </div>
+                        </div>
+                        <div class="skill__item">
+                            <div class="skill__info">
+                                <span class="skill__name">Java</span>
+                                <span class="skill__percentage">80%</span>
                             </div>
-                            <div class="skill-item">
-                                <div class="skill-info">
-                                    <span>React.js</span>
-                                    <span>70%</span>
-                                </div>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-width="70%"></div>
-                                </div>
+                            <div class="skill__bar">
+                                <div class="skill__progress" data-level="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill__item">
+                            <div class="skill__info">
+                                <span class="skill__name">C++</span>
+                                <span class="skill__percentage">75%</span>
+                            </div>
+                            <div class="skill__bar">
+                                <div class="skill__progress" data-level="75"></div>
                             </div>
                         </div>
                     </div>
-                    
-                    <!-- Backend Skills -->
-                    <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
-                        <div class="category-header">
-                            <i class="fas fa-server"></i>
-                            <h3>Backend Development</h3>
+                </div>
+
+                <div class="skill__category">
+                    <h3 class="category__title">Web Technologies</h3>
+                    <div class="skills__list">
+                        <div class="skill__item">
+                            <div class="skill__info">
+                                <span class="skill__name">HTML/CSS</span>
+                                <span class="skill__percentage">95%</span>
+                            </div>
+                            <div class="skill__bar">
+                                <div class="skill__progress" data-level="95"></div>
+                            </div>
                         </div>
-                        <div class="skill-items">
-                            <div class="skill-item">
-                                <div class="skill-info">
-                                    <span>Java</span>
-                                    <span>80%</span>
-                                </div>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-width="80%"></div>
-                                </div>
+                        <div class="skill__item">
+                            <div class="skill__info">
+                                <span class="skill__name">React.js</span>
+                                <span class="skill__percentage">85%</span>
                             </div>
-                            <div class="skill-item">
-                                <div class="skill-info">
-                                    <span>Node.js</span>
-                                    <span>65%</span>
-                                </div>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-width="65%"></div>
-                                </div>
+                            <div class="skill__bar">
+                                <div class="skill__progress" data-level="85"></div>
                             </div>
-                            <div class="skill-item">
-                                <div class="skill-info">
-                                    <span>MySQL</span>
-                                    <span>70%</span>
-                                </div>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-width="70%"></div>
-                                </div>
+                        </div>
+                        <div class="skill__item">
+                            <div class="skill__info">
+                                <span class="skill__name">Node.js</span>
+                                <span class="skill__percentage">80%</span>
+                            </div>
+                            <div class="skill__bar">
+                                <div class="skill__progress" data-level="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill__item">
+                            <div class="skill__info">
+                                <span class="skill__name">Express.js</span>
+                                <span class="skill__percentage">75%</span>
+                            </div>
+                            <div class="skill__bar">
+                                <div class="skill__progress" data-level="75"></div>
                             </div>
                         </div>
                     </div>
-                    
-                    <!-- Tools & Others -->
-                    <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
-                        <div class="category-header">
-                            <i class="fas fa-tools"></i>
-                            <h3>Tools & Technologies</h3>
+                </div>
+
+                <div class="skill__category">
+                    <h3 class="category__title">Database & Tools</h3>
+                    <div class="skills__list">
+                        <div class="skill__item">
+                            <div class="skill__info">
+                                <span class="skill__name">VS Code</span>
+                                <span class="skill__percentage">95%</span>
+                            </div>
+                            <div class="skill__bar">
+                                <div class="skill__progress" data-level="95"></div>
+                            </div>
                         </div>
-                        <div class="skill-items">
-                            <div class="skill-item">
-                                <div class="skill-info">
-                                    <span>Git & GitHub</span>
-                                    <span>75%</span>
-                                </div>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-width="75%"></div>
-                                </div>
+                        <div class="skill__item">
+                            <div class="skill__info">
+                                <span class="skill__name">Git/GitHub</span>
+                                <span class="skill__percentage">90%</span>
                             </div>
-                            <div class="skill-item">
-                                <div class="skill-info">
-                                    <span>VS Code</span>
-                                    <span>90%</span>
-                                </div>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-width="90%"></div>
-                                </div>
+                            <div class="skill__bar">
+                                <div class="skill__progress" data-level="90"></div>
                             </div>
-                            <div class="skill-item">
-                                <div class="skill-info">
-                                    <span>Responsive Design</span>
-                                    <span>85%</span>
-                                </div>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-width="85%"></div>
-                                </div>
+                        </div>
+                        <div class="skill__item">
+                            <div class="skill__info">
+                                <span class="skill__name">MySQL</span>
+                                <span class="skill__percentage">75%</span>
+                            </div>
+                            <div class="skill__bar">
+                                <div class="skill__progress" data-level="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill__item">
+                            <div class="skill__info">
+                                <span class="skill__name">MongoDB</span>
+                                <span class="skill__percentage">70%</span>
+                            </div>
+                            <div class="skill__bar">
+                                <div class="skill__progress" data-level="70"></div>
                             </div>
                         </div>
                     </div>
@@ -332,147 +244,154 @@
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="projects-section section-padding">
+    <section class="projects" id="projects">
         <div class="container">
-            <div class="section-title" data-aos="fade-up">
-                <h2>My Projects</h2>
-                <p>Showcasing my work and development journey</p>
+            <h2 class="section__title">Featured Projects</h2>
+            <div class="projects__filters">
+                <button class="filter__btn active" data-filter="all">All</button>
+                <button class="filter__btn" data-filter="web">Web</button>
+                <button class="filter__btn" data-filter="fullstack">Full Stack</button>
+                <button class="filter__btn" data-filter="data">Data Science</button>
+                <button class="filter__btn" data-filter="mobile">Mobile</button>
             </div>
-            
-            <div class="project-filter" data-aos="fade-up" data-aos-delay="100">
-                <button class="filter-btn active" data-filter="all">All</button>
-                <button class="filter-btn" data-filter="web">Web Apps</button>
-                <button class="filter-btn" data-filter="mobile">Mobile</button>
-                <button class="filter-btn" data-filter="java">Java</button>
+            <div class="projects__grid">
+                <div class="project__card" data-category="web">
+                    <div class="project__image">
+                        <div class="project__placeholder">PORTFOLIO</div>
+                    </div>
+                    <div class="project__content">
+                        <h3 class="project__title">Personal Portfolio Website</h3>
+                        <p class="project__description">A modern, responsive portfolio website built with HTML, CSS, and JavaScript. Features dark/light theme toggle, smooth animations, and Google Sheets integration for contact form.</p>
+                        <div class="project__tech">
+                            <span class="tech__tag">HTML</span>
+                            <span class="tech__tag">CSS</span>
+                            <span class="tech__tag">JavaScript</span>
+                            <span class="tech__tag">Google Sheets API</span>
+                        </div>
+                        <div class="project__links">
+                            <a href="https://github.com/YashPatil1402" class="project__link" target="_blank">GitHub</a>
+                            <a href="#" class="project__link" target="_blank">Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project__card" data-category="fullstack">
+                    <div class="project__image">
+                        <div class="project__placeholder">STUDENT-SYS</div>
+                    </div>
+                    <div class="project__content">
+                        <h3 class="project__title">Student Management System</h3>
+                        <p class="project__description">A comprehensive web application for managing student records, grades, and attendance. Built with full-stack technologies including user authentication and database management.</p>
+                        <div class="project__tech">
+                            <span class="tech__tag">React.js</span>
+                            <span class="tech__tag">Node.js</span>
+                            <span class="tech__tag">Express.js</span>
+                            <span class="tech__tag">MongoDB</span>
+                        </div>
+                        <div class="project__links">
+                            <a href="https://github.com/YashPatil1402" class="project__link" target="_blank">GitHub</a>
+                            <a href="#" class="project__link" target="_blank">Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project__card" data-category="web">
+                    <div class="project__image">
+                        <div class="project__placeholder">E-SHOP</div>
+                    </div>
+                    <div class="project__content">
+                        <h3 class="project__title">E-commerce Website Clone</h3>
+                        <p class="project__description">A responsive e-commerce platform clone with shopping cart functionality, product catalog, and user management. Implements modern React patterns and state management.</p>
+                        <div class="project__tech">
+                            <span class="tech__tag">React.js</span>
+                            <span class="tech__tag">Redux</span>
+                            <span class="tech__tag">CSS3</span>
+                            <span class="tech__tag">Local Storage</span>
+                        </div>
+                        <div class="project__links">
+                            <a href="https://github.com/YashPatil1402" class="project__link" target="_blank">GitHub</a>
+                            <a href="#" class="project__link" target="_blank">Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project__card" data-category="data">
+                    <div class="project__image">
+                        <div class="project__placeholder">DATA-VIZ</div>
+                    </div>
+                    <div class="project__content">
+                        <h3 class="project__title">Data Analysis Dashboard</h3>
+                        <p class="project__description">An interactive dashboard for data visualization and analysis using Python libraries. Features real-time data processing and multiple chart types for insights.</p>
+                        <div class="project__tech">
+                            <span class="tech__tag">Python</span>
+                            <span class="tech__tag">Pandas</span>
+                            <span class="tech__tag">Matplotlib</span>
+                            <span class="tech__tag">Streamlit</span>
+                        </div>
+                        <div class="project__links">
+                            <a href="https://github.com/YashPatil1402" class="project__link" target="_blank">GitHub</a>
+                            <a href="#" class="project__link" target="_blank">Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project__card" data-category="mobile">
+                    <div class="project__image">
+                        <div class="project__placeholder">MOBILE-APP</div>
+                    </div>
+                    <div class="project__content">
+                        <h3 class="project__title">Mobile App Clone</h3>
+                        <p class="project__description">A cross-platform mobile application clone with modern UI/UX design. Includes navigation, state management, and API integration capabilities.</p>
+                        <div class="project__tech">
+                            <span class="tech__tag">React Native</span>
+                            <span class="tech__tag">JavaScript</span>
+                            <span class="tech__tag">AsyncStorage</span>
+                        </div>
+                        <div class="project__links">
+                            <a href="https://github.com/YashPatil1402" class="project__link" target="_blank">GitHub</a>
+                            <a href="#" class="project__link" target="_blank">Live Demo</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            
-            <div class="projects-grid">
-                <!-- Project 1 -->
-                <div class="project-card" data-category="java" data-aos="fade-up" data-aos-delay="100">
-                    <div class="project-image">
-                        <img src="https://via.placeholder.com/400x250/4e54c8/ffffff?text=Library+Management" alt="Library Management System">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="#" class="project-link" title="View Details">
-                                    <i class="fas fa-eye"></i>
-                                </a>
-                                <a href="https://github.com/YashPatil1402" class="project-link" title="Source Code">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="project-status">
-                            <span class="status-badge in-progress">In Development</span>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Library Management System</h3>
-                        <p class="project-description">
-                            A comprehensive Java-based library management system with features for book cataloging, 
-                            member management, and lending operations.
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Java</span>
-                            <span class="tech-tag">MySQL</span>
-                            <span class="tech-tag">Swing</span>
-                        </div>
-                        <div class="project-progress">
-                            <div class="progress-bar">
-                                <div class="progress-fill" data-progress="75%"></div>
-                            </div>
-                            <span class="progress-text">75% Complete</span>
-                        </div>
+        </div>
+    </section>
+
+    <!-- Experience & Education Section -->
+    <section class="experience" id="experience">
+        <div class="container">
+            <h2 class="section__title">Education & Experience</h2>
+            <div class="timeline">
+                <div class="timeline__item">
+                    <div class="timeline__marker"></div>
+                    <div class="timeline__content">
+                        <div class="timeline__date">2023 - 2027</div>
+                        <h3 class="timeline__title">Bachelor of Engineering/Technology</h3>
+                        <h4 class="timeline__organization">Computer Science & Information Technology</h4>
+                        <p class="timeline__location">Engineering College, Mumbai, India</p>
+                        <p class="timeline__description">Currently pursuing my degree with focus on software development, data structures, algorithms, and emerging technologies. Active participant in coding competitions and technical workshops.</p>
                     </div>
                 </div>
-                
-                <!-- Project 2 -->
-                <div class="project-card" data-category="web" data-aos="fade-up" data-aos-delay="200">
-                    <div class="project-image">
-                        <img src="https://via.placeholder.com/400x250/2c3e50/ffffff?text=Portfolio+Website" alt="Portfolio Website">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="#" class="project-link" title="View Live">
-                                    <i class="fas fa-external-link-alt"></i>
-                                </a>
-                                <a href="https://github.com/YashPatil1402/portfolio" class="project-link" title="Source Code">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="project-status">
-                            <span class="status-badge completed">Completed</span>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Personal Portfolio</h3>
-                        <p class="project-description">
-                            A responsive portfolio website showcasing my skills, projects, and achievements 
-                            with modern design and smooth animations.
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-tag">HTML5</span>
-                            <span class="tech-tag">CSS3</span>
-                            <span class="tech-tag">JavaScript</span>
-                            <span class="tech-tag">AOS</span>
-                        </div>
+
+                <div class="timeline__item">
+                    <div class="timeline__marker"></div>
+                    <div class="timeline__content">
+                        <div class="timeline__date">2023 - Present</div>
+                        <h3 class="timeline__title">Student Developer</h3>
+                        <h4 class="timeline__organization">Self-Learning Projects</h4>
+                        <p class="timeline__location">Mumbai, India</p>
+                        <p class="timeline__description">Actively building various projects to enhance programming skills and gain practical experience in software development. Focus on full-stack web development and modern technologies.</p>
                     </div>
                 </div>
-                
-                <!-- Project 3 -->
-                <div class="project-card" data-category="web" data-aos="fade-up" data-aos-delay="300">
-                    <div class="project-image">
-                        <img src="https://via.placeholder.com/400x250/e74c3c/ffffff?text=Coming+Soon" alt="Project Coming Soon">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="#" class="project-link" title="Coming Soon">
-                                    <i class="fas fa-clock"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="project-status">
-                            <span class="status-badge planned">Planned</span>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">E-Commerce Platform</h3>
-                        <p class="project-description">
-                            A full-stack e-commerce solution with user authentication, product management, 
-                            and payment integration.
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-tag">React</span>
-                            <span class="tech-tag">Node.js</span>
-                            <span class="tech-tag">MongoDB</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Project 4 -->
-                <div class="project-card" data-category="mobile" data-aos="fade-up" data-aos-delay="400">
-                    <div class="project-image">
-                        <img src="https://via.placeholder.com/400x250/9b59b6/ffffff?text=Mobile+App" alt="Mobile App">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="#" class="project-link" title="Coming Soon">
-                                    <i class="fas fa-clock"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="project-status">
-                            <span class="status-badge planned">Planned</span>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Task Management App</h3>
-                        <p class="project-description">
-                            A mobile application for task management with real-time synchronization 
-                            and collaborative features.
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-tag">React Native</span>
-                            <span class="tech-tag">Firebase</span>
-                            <span class="tech-tag">Redux</span>
-                        </div>
+
+                <div class="timeline__item">
+                    <div class="timeline__marker"></div>
+                    <div class="timeline__content">
+                        <div class="timeline__date">Ongoing</div>
+                        <h3 class="timeline__title">Technical Skills Development</h3>
+                        <h4 class="timeline__organization">Online Learning & Practice</h4>
+                        <p class="timeline__location">Remote</p>
+                        <p class="timeline__description">Continuously learning new technologies through online courses, coding challenges, and building personal projects. Focused on React.js, Node.js, Python, and database management.</p>
                     </div>
                 </div>
             </div>
@@ -480,97 +399,55 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact-section section-padding">
+    <section class="contact" id="contact">
         <div class="container">
-            <div class="section-title" data-aos="fade-up">
-                <h2>Get In Touch</h2>
-                <p>Let's discuss opportunities and collaborate on exciting projects</p>
-            </div>
-            
-            <div class="contact-content">
-                <div class="contact-info" data-aos="fade-right" data-aos-duration="1000">
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-map-marker-alt"></i>
+            <h2 class="section__title">Get In Touch</h2>
+            <div class="contact__content">
+                <div class="contact__info">
+                    <h3>Let's Connect!</h3>
+                    <p>I'm always excited to discuss new opportunities, innovative projects, and potential collaborations. Whether you have a project idea, job opportunity, or just want to connect, feel free to reach out!</p>
+                    <div class="contact__details">
+                        <div class="contact__item">
+                            <strong>Email:</strong>
+                            <a href="mailto:yashpatil.140227@gmail.com">yashpatil.140227@gmail.com</a>
                         </div>
-                        <div class="contact-details">
-                            <h4>Location</h4>
-                            <p>Maharashtra, India</p>
+                        <div class="contact__item">
+                            <strong>Phone:</strong>
+                            <a href="tel:+918149844805">+91 8149844805</a>
                         </div>
-                    </div>
-                    
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h4>Email</h4>
-                            <p>yash@example.com</p>
+                        <div class="contact__item">
+                            <strong>Location:</strong>
+                            <span>Mumbai, India</span>
                         </div>
                     </div>
-                    
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-phone"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h4>Phone</h4>
-                            <p>+91 XXXXX XXXXX</p>
-                        </div>
-                    </div>
-                    
-                    <div class="contact-social">
-                        <h4>Follow Me</h4>
-                        <div class="social-icons">
-                            <a href="https://github.com/YashPatil1402" target="_blank" class="social-icon">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="https://www.linkedin.com/in/yash-patil-1736702b1/" target="_blank" class="social-icon">
-                                <i class="fab fa-linkedin"></i>
-                            </a>
-                            <a href="https://instagram.com/yashpatil.14" target="_blank" class="social-icon">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                            <a href="https://twitter.com/yashpatil" target="_blank" class="social-icon">
-                                <i class="fab fa-twitter"></i>
-                            </a>
-                        </div>
+                    <div class="social__links">
+                        <a href="https://lnkd.in/eqchiNMk" target="_blank" class="social__link">LinkedIn</a>
+                        <a href="https://github.com/YashPatil1402" target="_blank" class="social__link">GitHub</a>
+                        <a href="https://lnkd.in/ecuZQCSh" target="_blank" class="social__link">Instagram</a>
                     </div>
                 </div>
-                
-                <div class="contact-form-container" data-aos="fade-left" data-aos-duration="1000">
-                    <form id="contact-form" class="contact-form">
-                        <div class="form-group">
-                            <label for="name">Full Name</label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="email">Email Address</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="subject">Subject</label>
-                            <input type="text" id="subject" name="subject" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" rows="6" required></textarea>
-                        </div>
-                        
-                        <button type="submit" class="btn btn-primary btn-full">
-                            <span class="btn-text">Send Message</span>
-                            <span class="btn-loading">
-                                <i class="fas fa-spinner fa-spin"></i>
-                                Sending...
-                            </span>
-                        </button>
-                    </form>
-                    
-                    <div id="response" class="form-response"></div>
-                </div>
+                <form class="contact__form" id="contact-form">
+                    <div class="form-group">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" id="name" name="name" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" id="email" name="email" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject" class="form-label">Subject</label>
+                        <input type="text" id="subject" name="subject" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea id="message" name="message" class="form-control" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn--primary btn--full-width" id="submit-btn">
+                        <span class="btn-text">Send Message</span>
+                        <span class="btn-loading hidden">Sending...</span>
+                    </button>
+                </form>
             </div>
         </div>
     </section>
@@ -578,55 +455,21 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>Yash Patil</h3>
-                    <p>Computer Engineering student passionate about creating innovative solutions through technology.</p>
+            <div class="footer__content">
+                <div class="footer__text">
+                    <p>&copy; 2025 Yash Patil. All rights reserved.</p>
                 </div>
-                
-                <div class="footer-section">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#skills">Skills</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-section">
-                    <h4>Connect</h4>
-                    <div class="footer-social">
-                        <a href="https://github.com/YashPatil1402" target="_blank">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/in/yash-patil-1736702b1/" target="_blank">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                        <a href="https://instagram.com/yashpatil.14" target="_blank">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="mailto:yash@example.com">
-                            <i class="fas fa-envelope"></i>
-                        </a>
-                    </div>
+                <div class="footer__links">
+                    <a href="https://lnkd.in/eqchiNMk" target="_blank">LinkedIn</a>
+                    <a href="https://github.com/YashPatil1402" target="_blank">GitHub</a>
+                    <a href="https://lnkd.in/ecuZQCSh" target="_blank">Instagram</a>
+                    <a href="mailto:yashpatil.140227@gmail.com">Email</a>
                 </div>
             </div>
-            
-            <div class="footer-bottom">
-                <p>&copy; 2025 Yash Patil. All rights reserved. | Made with <i class="fas fa-heart"></i> by Yash</p>
-            </div>
+            <button class="back-to-top" id="back-to-top" aria-label="Back to top">↑</button>
         </div>
     </footer>
 
-    <!-- Back to Top Button -->
-    <button id="back-to-top" class="back-to-top" title="Back to Top">
-        <i class="fas fa-chevron-up"></i>
-    </button>
-
-    <!-- Scripts -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script src="script.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>

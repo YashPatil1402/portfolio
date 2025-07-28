@@ -7,9 +7,8 @@ function initializeContactForm() {
     const submitBtn = document.getElementById('submit-btn');
 
     // Google Script URL for form submission
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbwD3FG3KuBLdE0vit4ltAINYrkyP95A2GbdTUOf15yDwdwi-1bGTUIhGgH5oBkCWdNvlg/exec';
-
-    // Add input validation
+    const scriptURL = 'https://script.google.com/macros/s/AKfycby1Rz3R9ED7OeEW1PlcOYKbo4w_xkc8L4UW8_fQbET2TY2gjbAsl-6I-5HsHdjYyFDMiA/exec';
+			    // Add input validation
     formInputs.forEach(input => {
         input.addEventListener('blur', validateInput);
         input.addEventListener('input', clearErrors);
@@ -83,18 +82,20 @@ function initializeContactForm() {
             const formData = new FormData(contactForm);
 
             // Submit to Google Sheets
-            await fetch(scriptURL, {
+            const response = await fetch(scriptURL, {
                 method: 'POST',
                 body: formData
             });
 
-            showFormMessage('Thank you for your message! I\'ll get back to you soon.', 'success');
-            contactForm.reset();
+            if (response.ok) {
+                showFormMessage('Thank you for your message! I\'ll get back to you soon.', 'success');
+                contactForm.reset();
+            } else {
+                throw new Error('Network response was not ok');
+            }
         } catch (error) {
             console.error('Error submitting form:', error);
-            // Show "success" anyway, since Google Script doesn't return errors usefully
-            showFormMessage('Thank you for your message! I\'ll get back to you soon.', 'success');
-            contactForm.reset();
+            showFormMessage('Sorry, something went wrong. Please try again later.', 'error');
         } finally {
             submitBtn.textContent = originalText;
             submitBtn.disabled = false;
@@ -118,3 +119,9 @@ function initializeContactForm() {
         }, 5000);
     }
 }
+
+// Make sure to call this function when the DOM is loaded
+document.addEventListener('DOMContentLoaded', function() {
+    initializeContactForm();
+    // ... other initialization functions
+});

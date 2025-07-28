@@ -3,12 +3,13 @@ function initializeContactForm() {
     const contactForm = document.getElementById('contact-form');
     if (!contactForm) return;
     
-    const formInputs = contactForm.querySelectorAll('input, textarea');
+    const formInputs = contactForm.querySelectorAll('input[name], textarea[name]');
     const submitBtn = document.getElementById('submit-btn');
 
-    // Google Script URL for form submission
-    const scriptURL = 'https://script.google.com/macros/s/AKfycby1Rz3R9ED7OeEW1PlcOYKbo4w_xkc8L4UW8_fQbET2TY2gjbAsl-6I-5HsHdjYyFDMiA/exec';
-			    // Add input validation
+    // ✅ Correct Google Script URL
+    const scriptURL = 'https://script.google.com/macros/s/AKfycby52ou5KfYy05NGlpeDqf5I920c4szd7OdimSe8j3OR4FXSFlBfTFuHhnf3FbnOfirb7w/exec';
+
+    // Add input validation
     formInputs.forEach(input => {
         input.addEventListener('blur', validateInput);
         input.addEventListener('input', clearErrors);
@@ -81,7 +82,7 @@ function initializeContactForm() {
         try {
             const formData = new FormData(contactForm);
 
-            // Submit to Google Sheets
+            // ✅ Submit to Google Sheets
             const response = await fetch(scriptURL, {
                 method: 'POST',
                 body: formData
@@ -104,7 +105,6 @@ function initializeContactForm() {
     }
 
     function showFormMessage(message, type) {
-        // Remove existing message
         const existingMessage = contactForm.querySelector('.form-message');
         if (existingMessage) existingMessage.remove();
 
@@ -113,15 +113,13 @@ function initializeContactForm() {
         messageElement.textContent = message;
         contactForm.appendChild(messageElement);
 
-        // Remove message after 5 seconds
         setTimeout(() => {
             if (messageElement.parentNode) messageElement.remove();
         }, 5000);
     }
 }
 
-// Make sure to call this function when the DOM is loaded
+// Call when DOM is ready
 document.addEventListener('DOMContentLoaded', function() {
     initializeContactForm();
-    // ... other initialization functions
 });

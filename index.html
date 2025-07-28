@@ -93,7 +93,6 @@
   </div>
 
   <script>
-    // Contact form handling with Google Sheets integration
     function initializeContactForm() {
       const contactForm = document.getElementById('contact-form');
       if (!contactForm) return;
@@ -149,7 +148,7 @@
       }
 
       function isValidEmail(email) {
-        const emailRegex = /^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/;
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         return emailRegex.test(email);
       }
 

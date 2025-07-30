@@ -7,6 +7,7 @@
     <title>Yash Patil | Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script defer src="script.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
 </head>
 
@@ -26,6 +27,7 @@
 
     <section id="home" class="section home">
         <div class="content">
+            <img src="https://github.com/YashPatil1402.png" alt="Yash Patil" class="profile-photo">
             <h1>Hi, I'm Yash Patil</h1>
             <p>Web Developer | Software Developer | AI/ML Enthusiast</p>
             <a href="#contact" class="btn">Let's Connect</a>
@@ -85,12 +87,17 @@
 
     <section id="contact" class="section contact">
         <h2>Contact Me</h2>
-        <form action="https://formspree.io/f/mnqezybw" method="POST" class="contact-form">
+        <form id="contact-form" class="contact-form">
             <input type="text" name="name" placeholder="Your Name" required>
             <input type="email" name="email" placeholder="Your Email" required>
             <textarea name="message" placeholder="Your Message" required></textarea>
             <button type="submit" class="btn">Send</button>
         </form>
+        <div class="contact-details">
+            <p><strong>Email:</strong> yash.work02@outlook.com</p>
+            <p><strong>Instagram:</strong> <a href="https://instagram.com/yashpatil.14" target="_blank">@yashpatil.14</a></p>
+            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/yash-patil-1736702b1" target="_blank">LinkedIn Profile</a></p>
+        </div>
     </section>
 
     <footer class="footer">
@@ -101,6 +108,27 @@
             <a href="https://instagram.com/yashpatil.14" target="_blank">Instagram</a>
         </div>
     </footer>
+
+    <script>
+        document.getElementById("contact-form").addEventListener("submit", function(e) {
+            e.preventDefault();
+            const formData = new FormData(this);
+            fetch("https://script.google.com/macros/s/YOUR_GOOGLE_SCRIPT_ID/exec", {
+                method: "POST",
+                body: formData
+            })
+            .then(response => alert("Message sent successfully!"))
+            .catch(error => alert("Error! Message not sent."));
+        });
+
+        gsap.from(".section", {
+            scrollTrigger: ".section",
+            opacity: 0,
+            y: 50,
+            duration: 0.8,
+            stagger: 0.3
+        });
+    </script>
 </body>
 
 </html>

@@ -19,13 +19,13 @@ body.dark {
 
 /* Body & Typography */
 body {
-    margin: 0;
-    font-family: 'Poppins', sans-serif;
-    font-size: 16px;
-    background: var(--bg);
-    color: var(--text);
-    scroll-behavior: smooth;
-    transition: background 0.3s, color 0.3s;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  background: var(--bg);
+  color: var(--text);
+  scroll-behavior: smooth;
+  transition: background 0.4s ease, color 0.4s ease;
 }
 
 /* Header */

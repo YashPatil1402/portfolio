@@ -1,91 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Yash Patil | Portfolio</title>
-
-  <!-- Fonts & Icons -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  
-  <!-- AOS CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
-  
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yash Patil | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
+    <header class="header">
+        <div class="logo">Yash Patil</div>
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#vlogs">Vlogs</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <div class="theme-toggle" onclick="toggleTheme()">🌓</div>
+    </header>
 
-  <!-- Header Section -->
-  <header class="main-header" data-aos="fade-down">
-   <div class="header-content" data-aos="zoom-in">
-  <div class="header-row">
-    <h1>Yash Patil</h1>
-    <img src="yash.jpg" alt="Yash Patil" class="header-photo" />
-    <br>
-    <h2>Portfolio Website</h2>
-  </div>
-  <p>I'm Yash Patil — still studying, still learning, still growing. The grind doesn’t stop.</p>
-</div>
-
-
-      <!-- Social Icons -->
-      <div class="header-socials" data-aos="fade-left">
-        <a href="https://instagram.com/yashpatil.14" target="_blank">
-          <img src="https://img.icons8.com/color/48/instagram-new--v1.png" alt="Instagram">
-        </a>
-        <a href="https://www.linkedin.com/in/yash-patil-1736702b1" target="_blank">
-          <img src="https://img.icons8.com/color/48/linkedin.png" alt="LinkedIn">
-        </a>
-        <a href="https://wa.me/918149844805" target="_blank">
-          <img src="https://img.icons8.com/color/48/whatsapp--v1.png" alt="WhatsApp">
-        </a>
-      </div>
-    </div>
-  </header>
-
-  <!-- Main Content -->
-  <main>
-    <!-- About Section -->
-    <section id="about" data-aos="fade-up">
-      <h2>About Me</h2>
-      <p>
-        Hi, I'm Yash Patil, a Computer Engineering student at ##################################. I’ve completed my diploma from MSBTE and have a strong interest in tech, especially web and mobile development. I enjoy learning new things, working on practical projects, and constantly improving my skills. Always curious, always growing.
-      </p>
+    <section id="home" class="section home">
+        <div class="content">
+            <h1>Hi, I'm Yash Patil</h1>
+            <p>Web Developer | Software Developer | AI/ML Enthusiast</p>
+            <a href="#contact" class="btn">Let's Connect</a>
+        </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" data-aos="fade-up">
-      <h2>Projects</h2>
-      <div class="project-card" data-aos="zoom-in">
-        <h3>Coming Soon</h3>
-         <p><strong>Project 1 : </strong>Library Management System - java</p>
-        <p><strong>Status:</strong> Under Developement</p>
-        <p>This project is currently in the planning phase. Details will be updated once development begins. Stay tuned!</p>
-      </div>
+    <section id="about" class="section about">
+        <h2>About Me</h2>
+        <p>I’m a passionate computer engineering student currently specializing in web development, software engineering, and AI/ML projects. I enjoy building solutions that solve real-world problems.</p>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" data-aos="fade-up">
-      <h2>Contact Me</h2>
-      <form id="contact-form" data-aos="zoom-in">
-        <input type="text" name="Name" placeholder="Your Name" required />
-        <input type="email" name="Email" placeholder="Your Email" required />
-        <textarea name="Message" placeholder="Your Message" rows="5" required></textarea>
-        <button type="submit">Send</button>
-        <p id="response"></p>
-      </form>
+    <section id="skills" class="section skills">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">Python</div>
+            <div class="skill">Java</div>
+            <div class="skill">C</div>
+            <div class="skill">Machine Learning</div>
+            <div class="skill">GitHub</div>
+        </div>
     </section>
-  </main>
 
-  <!-- Footer -->
-  <footer data-aos="fade-up">
-    <p>&copy; 2025 Yash Patil. All rights reserved.</p>
-  </footer>
+    <section id="projects" class="section projects">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3>Library Management System</h3>
+                <p>Built with Python and SQLite.</p>
+            </div>
+            <div class="project-card">
+                <h3>Portfolio Website</h3>
+                <p>Responsive and animated personal site using HTML/CSS/JS.</p>
+            </div>
+            <div class="project-card">
+                <h3>AI Face Detection</h3>
+                <p>Built using OpenCV and Python.</p>
+            </div>
+        </div>
+    </section>
 
-  <!-- AOS JS + Custom JS -->
-  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-  <script src="script.js"></script>
+    <section id="vlogs" class="section vlogs">
+        <h2>Vlogs</h2>
+        <div class="vlogs-grid">
+            <div class="vlog-card">
+                <h3>My Journey into Web Development</h3>
+                <p>I started learning web development during my diploma and built several projects using HTML, CSS, and JavaScript. This section covers the struggles, breakthroughs, and resources I used.</p>
+            </div>
+            <div class="vlog-card">
+                <h3>Behind the Scenes: Building Projects</h3>
+                <p>This post shares how I approach project planning, problem-solving strategies I use, and how I stay consistent with learning and development every day.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section contact">
+        <h2>Contact Me</h2>
+        <form action="https://formspree.io/f/mnqezybw" method="POST" class="contact-form">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">Send</button>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2025 Yash Patil. All rights reserved.</p>
+        <div class="socials">
+            <a href="https://github.com/YashPatil1402" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/yash-patil-1736702b1" target="_blank">LinkedIn</a>
+            <a href="https://instagram.com/yashpatil.14" target="_blank">Instagram</a>
+        </div>
+    </footer>
 </body>
+
 </html>
